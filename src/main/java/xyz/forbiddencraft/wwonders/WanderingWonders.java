@@ -9,11 +9,11 @@ import net.minecraft.util.registry.Registry;
 
 public class WanderingWonders implements ModInitializer {
 
-    public static final Item FABRIC_ITEM = new Item(new Item.Settings().group(ItemGroup.MISC));
+    public static final Item END_SWORD = new endSword(new Item.Settings().group(ItemGroup.MISC));
 
     @Override
     public void onInitialize() {
-        Registry.register(Registry.ITEM, new Identifier("wwonders", "fabric_item"), FABRIC_ITEM);
+        Registry.register(Registry.ITEM, new Identifier("wwonders", "end_sword"), END_SWORD);
         
     }
     
