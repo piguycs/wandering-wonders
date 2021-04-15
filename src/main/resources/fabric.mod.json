@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "wwonders",
+  "version": "${version}",
+
+  "name": "Wandering Wonders",
+  "description": "This is a simple yet massive overhaul to villagers which adds quests to the game",
+  "authors": [
+    "ThePiGuy"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/wwonders/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.forbiddencraft.wwonders.WanderingWonders"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
