@@ -1,3 +1,9 @@
+
 {
-    "item.wwonders.end_sword": "End Sword"
+    "item.wwonders.end_sword": "End Sword",
+    "item.wwonders.eris": "§6Eris",
+    "item.wwonders.eris.info.line1": "Eris can be used as tokens",
+    "item.wwonders.eris.info.line2": "to trade with villagers",
+    "item.wwonders.tooltip.linebreak": "",
+    "item.wwonders.eris.tooltip": "LEGENDARY TRADING ITEM"
 }
