@@ -5,5 +5,10 @@
     "item.wwonders.eris.info.line1": "Eris can be used as tokens",
     "item.wwonders.eris.info.line2": "to trade with villagers",
     "item.wwonders.tooltip.linebreak": "",
-    "item.wwonders.eris.tooltip": "LEGENDARY TRADING ITEM"
+    "item.wwonders.eris.tooltip": "LEGENDARY TRADING ITEM",
+
+    "skill.wwonders.heading": "SKILLS",
+    "skill.wwonders.combat": "Combat",
+    "skill.wwonders.combat.button": "Level up",
+    "skill.wwonders.adventuring": "Adventuring"
 }

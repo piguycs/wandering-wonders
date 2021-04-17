@@ -5,16 +5,19 @@ import org.lwjgl.glfw.GLFW;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.options.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.text.LiteralText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import xyz.forbiddencraft.wwonders.gui.ExampleGui;
+import xyz.forbiddencraft.wwonders.gui.ExampleScreen;
 import xyz.forbiddencraft.wwonders.items.endSword;
 import xyz.forbiddencraft.wwonders.items.eris;
 import xyz.forbiddencraft.wwonders.items.guiItem;
+
 
 
 public class WanderingWonders implements ModInitializer {
@@ -39,10 +42,10 @@ public class WanderingWonders implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("wwonders", "end_sword"), END_SWORD);
         Registry.register(Registry.ITEM, new Identifier("wwonders", "eris"), ERIS);
         Registry.register(Registry.ITEM, new Identifier("wwonders", "gui_item"), GUI_ITEM);
-
+        
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (lolKeybind.wasPressed()) {
-                client.player.sendMessage(new LiteralText("Key 1 was pressed!"), false);
+                MinecraftClient.getInstance().openScreen(new ExampleScreen(new ExampleGui()));
             }
         });
         
