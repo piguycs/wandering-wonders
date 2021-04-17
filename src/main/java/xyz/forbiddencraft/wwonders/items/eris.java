@@ -1,4 +1,4 @@
-package xyz.forbiddencraft.wwonders;
+package xyz.forbiddencraft.wwonders.items;
 
 import java.util.List;
 

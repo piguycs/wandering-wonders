@@ -12,6 +12,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import xyz.forbiddencraft.wwonders.items.endSword;
+import xyz.forbiddencraft.wwonders.items.eris;
+import xyz.forbiddencraft.wwonders.items.guiItem;
 
 
 public class WanderingWonders implements ModInitializer {
@@ -19,6 +22,8 @@ public class WanderingWonders implements ModInitializer {
     // ITEMS
     public static final Item END_SWORD = new endSword(new Item.Settings().group(ItemGroup.MISC));
     public static final Item ERIS = new eris(new Item.Settings().group(ItemGroup.MISC));
+    public static Item GUI_ITEM = new guiItem(new Item.Settings().group(ItemGroup.MISC));
+
 
     // Keybinds lel
     private static KeyBinding lolKeybind = KeyBindingHelper.registerKeyBinding(new KeyBinding(
@@ -33,6 +38,7 @@ public class WanderingWonders implements ModInitializer {
     public void onInitialize() {
         Registry.register(Registry.ITEM, new Identifier("wwonders", "end_sword"), END_SWORD);
         Registry.register(Registry.ITEM, new Identifier("wwonders", "eris"), ERIS);
+        Registry.register(Registry.ITEM, new Identifier("wwonders", "gui_item"), GUI_ITEM);
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (lolKeybind.wasPressed()) {

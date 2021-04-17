@@ -1,4 +1,4 @@
-package xyz.forbiddencraft.wwonders;
+package xyz.forbiddencraft.wwonders.items;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
